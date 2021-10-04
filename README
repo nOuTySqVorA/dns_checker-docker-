@@ -1,0 +1,6 @@
+# RELEASE v,1
+# Docker container digs A-records and NS-servers
+
+# Deployment:
+  # - docker build -t dns . - do this in the same directory, where Dockerfile is
+  # - docker run dns /path/to/dns_file - where dns_file is a file which contains hostnames to be dig

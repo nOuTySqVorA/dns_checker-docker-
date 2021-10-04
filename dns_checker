@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+file=$1
+if [ ! -s $1 ]; then
+   echo "Passed file is empty"
+
+else
+   while read file_line
+   do
+         echo $file_line
+         dig +short $file_line
+	 done < $file
+fi
