@@ -1,3 +1,4 @@
 #add hostnames here like below
 fornex.com
 google.com
+yandex.com

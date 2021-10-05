@@ -8,9 +8,28 @@ if [ ! -s $1 ]; then
 else
    while read host
    do
+         echo "==========================================================="
+         echo "Host name:"
          echo $host
+         echo ""
+         echo "A-record(s):"
          dig +short $host
-         dig +short ns $host
+         echo ""
+         echo "NS-servers:"
+         whois $host | grep -i "name server"
+         echo ""
+         echo "Domain status:"
+         whois $host | grep -i "domain status"
+         echo ""
+         echo "Updated Date:"
+         whois $host | grep -i "updated date"
+         echo ""
+         echo "Creation Date:"
+         whois $host | grep -i "creation date"
+         echo ""
+         echo "Registrar Registration Expiration Date:"
+         whois $host | grep -i "registrar Registration Expiration Date"
+         echo "==========================================================="
          echo ""
          done < $file
 fi
