@@ -28,7 +28,7 @@ else
          whois $host | grep -i "creation date"
          echo ""
          echo "Registrar Registration Expiration Date:"
-         whois $host | grep -i "registrar Registration Expiration Date"
+         whois $host | grep -i "registrar registration expiration date"
          echo "==========================================================="
          echo ""
          done < $file
