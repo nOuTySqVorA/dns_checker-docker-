@@ -5,9 +5,9 @@
 # Deployment:
   # - add hostnames to dns_file.txt
   # - docker build -t dns . - do this in the same directory, where Dockerfile is
-  # - docker run --rm dns dns_record
+  # - docker run -t dns dns_record
 
 # Example:
-# docker run --rm dns A
-# docker run --rm dns status or STATUS
-# docker run --rm dns MX or mx
+# docker run -t dns A
+# docker run -t dns status or STATUS
+# docker run -t dns MX or mx
