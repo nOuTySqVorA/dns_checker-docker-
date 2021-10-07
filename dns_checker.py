@@ -203,6 +203,8 @@ def resolver():
     getRegistrar()
   elif arg[1] == "DATE" or arg[1] == "date":
     getDate()
+  else:
+    print ("You have entered incorrect DNS-record")
 
 if __name__ == "__main__":
   resolver()

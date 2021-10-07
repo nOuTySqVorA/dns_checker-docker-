@@ -1,4 +1,4 @@
-# RELEASE v.1
+# RELEASE v.4
 # Docker container to check DNS-records: A,AAAA,SOA,MX,NS,PTR,CNAME,TXT
 # Also, you can check additional information: domain status(use "STATUS" or "status" keyword), registrar(use "REG" or "reg" keyword) and expiration/creation/update date(use "DATE" or "date" keyword)
 
