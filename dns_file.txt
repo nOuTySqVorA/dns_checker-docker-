@@ -1,4 +1,7 @@
 #add hostnames here like below
 fornex.com
-google.com
 yandex.com
+pavelromaska.ru
+rx-name.ua
+mail.google.com
+116.62.218.34.in-addr.arpa
