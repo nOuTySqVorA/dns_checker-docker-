@@ -1,7 +1,13 @@
 # RELEASE v.1
-# Docker container digs A-records and NS-servers
+# Docker container to check DNS-records: A,AAAA,SOA,MX,NS,PTR,CNAME,TXT
+# Also, you can check additional information: domain status(use "STATUS" or "status" keyword), registrar(use "REG" or "reg" keyword) and expiration/creation/update date(use "DATE" or "date" keyword)
 
 # Deployment:
   # - add hostnames to dns_file.txt
   # - docker build -t dns . - do this in the same directory, where Dockerfile is
-  # - docker run dns
+  # - docker run --rm dns dns_record
+
+# Example:
+# docker run --rm dns A
+# docker run --rm dns status or STATUS
+# docker run --rm dns MX or mx
